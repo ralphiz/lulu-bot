@@ -15,7 +15,9 @@ client.on("message", function (message) {
 
   if (command === "fetch") {
     const timeTaken = Date.now() - message.createdTimestamp;
-    message.reply(`Got it! This message had a latency of ${timeTaken}ms.`);
+    message.reply(
+      `Got it! :dog: :tennis: It took me ${timeTaken}ms to fetch the ball!`
+    );
   }
 });
 
