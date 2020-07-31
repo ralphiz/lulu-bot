@@ -13,7 +13,9 @@
   ],
   "author": "Ralph Cacho",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
   "devDependencies": {
     "prettier": "2.0.5"
   }
