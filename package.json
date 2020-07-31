@@ -7,10 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "['Discord'",
-    "'Bot'",
-    "'Doggo']"
+    "Discord",
+    "Bot",
+    "Doggo"
   ],
   "author": "Ralph Cacho",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
 }
