@@ -1,3 +1,5 @@
+![Lulu](https://raw.githubusercontent.com/ralphiz/lulu-bot/master/images/lulu.png?raw=true)
+
 # lulu-bot
 A Discord bot with dog related things. Created for learning purposes, named after our wonderful doggo.
 
