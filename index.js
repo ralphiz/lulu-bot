@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
-// TODO: Update the config file to use environment variables.
-// TODO: Change config.json to config.js and use `dotenv` module.
-const config = require("./config.json");
+const config = require("./config.js");
 
 const client = new Discord.Client();
 
@@ -21,4 +19,4 @@ client.on("message", function (message) {
   }
 });
 
-client.login(config.BOT_TOKEN);
+client.login(config.DISCORD.BOT_TOKEN);
