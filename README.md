@@ -7,11 +7,17 @@ Prefix: lulu.
 
 ## Current Commands:
 - Fetch: Returns how long the command took to respond.
+- Friend: Generate a random doggo image.
 
 ## Planned Commands:
 - Choose: Picks one from a set of choices provided.
-- Friend: Generate a random doggo image.
 
 ### Resources
 - A great tutorial on how to get started creating your own Discord bot: [How To Build a Discord Bot with Node.js](https://www.digitalocean.com/community/tutorials/how-to-build-a-discord-bot-with-node-js)
-- Dog API: https://thedogapi.com/
+
+- Awesome tutorial on how to get started with the `discord.js-commando` module: [Discord.JS Commando Framework - Create and Organize Commands Like a Pro
+](https://www.youtube.com/watch?v=nDuDw4aH7Gg)
+
+- Dog APIs:
+  - https://dog.ceo/dog-api/
+  - https://thedogapi.com/
