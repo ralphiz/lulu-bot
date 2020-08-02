@@ -1,4 +1,6 @@
-![Lulu](https://raw.githubusercontent.com/ralphiz/lulu-bot/master/images/lulu.png?raw=true)
+
+
+<img src="https://raw.githubusercontent.com/ralphiz/lulu-bot/master/images/lulu.png" alt="Chipoodle Dog" width="250" height="250">
 
 # lulu-bot
 A Discord bot with dog related things. Created for learning purposes, named after our wonderful doggo.
