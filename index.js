@@ -1,24 +1,28 @@
-const Discord = require("discord.js");
-const config = require("./config.js");
+require("dotenv").config();
+const path = require("path");
 
-const client = new Discord.Client();
+const { DISCORD_BOT_TOKEN, OWNER } = process.env;
 
-const prefix = "lulu.";
+const { CommandoClient } = require("discord.js-commando");
 
-client.on("message", function (message) {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
+const PREFIX = "lulu.";
 
-  const commandBody = message.content.slice(prefix.length);
-  const args = commandBody.split(" ");
-  const command = args.shift().toLowerCase();
-
-  if (command === "fetch") {
-    const timeTaken = Date.now() - message.createdTimestamp;
-    message.reply(
-      `Got it! :dog: :tennis: It took me ${timeTaken}ms to fetch the ball!`
-    );
-  }
+const client = new CommandoClient({
+  commandPrefix: PREFIX,
+  owner: OWNER,
 });
 
-client.login(config.DISCORD.BOT_TOKEN);
+client.login(DISCORD_BOT_TOKEN);
+
+client.on("ready", () => {
+  console.log("Lulu bot logged in!");
+});
+
+client.registry
+  .registerGroups([
+    ["doggo", "Doggo commands"],
+    ["mod", "Mod commands"],
+    ["other", "Other commands"],
+  ])
+  .registerDefaults()
+  .registerCommandsIn(path.join(__dirname, "commands"));
