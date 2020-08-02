@@ -1,7 +1,7 @@
 const { Command } = require("discord.js-commando");
-const request = require("node-superfetch");
+const fetch = require("node-fetch");
 
-module.exports = class Friend extends Command {
+module.exports = class FriendCommand extends Command {
   constructor(client) {
     super(client, {
       name: "friend",
@@ -16,15 +16,11 @@ module.exports = class Friend extends Command {
   }
 
   async run(msg) {
-    try {
-      const { body } = await request.get(
-        "https://dog.ceo/api/breeds/image/random"
-      );
-      return msg.say("Meet my friend:", { files: [body.message] });
-    } catch (err) {
-      return msg.reply(
-        `Oh no, an error occurred: \`${err.message}\`. Try again later!`
-      );
-    }
+    await fetch("https://dog.ceo/api/breeds/image/random")
+      .then((response) => response.json())
+      .then((data) =>
+        msg.say("Here is a random doggo friend:", { files: [data.message] })
+      )
+      .catch((error) => msg.say(`Uh oh! ${error}`, { code: true }));
   }
 };
