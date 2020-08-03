@@ -17,7 +17,7 @@ module.exports = class FetchCommand extends Command {
   async run(msg) {
     const timeTaken = Date.now() - msg.createdTimestamp;
     msg.say(
-      `Got it! :dog: :tennis: It took me ${timeTaken}ms to fetch the ball!`
+      `🐶: "Got it! :tennis: It took me ${timeTaken}ms to fetch the ball!"`
     );
   }
 };
