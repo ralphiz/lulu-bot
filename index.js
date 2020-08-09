@@ -5,7 +5,7 @@ const { DISCORD_BOT_TOKEN, OWNER } = process.env;
 
 const { CommandoClient } = require("discord.js-commando");
 
-const PREFIX = "lulu.";
+const PREFIX = "l.";
 
 const client = new CommandoClient({
   commandPrefix: PREFIX,

@@ -5,7 +5,7 @@
 # lulu-bot
 A Discord bot with dog related things. Created for learning purposes, named after our wonderful doggo.
 
-Prefix: lulu.
+Prefix: l.
 
 ## Current Commands:
 - Fetch: Returns how long the command took to respond.
