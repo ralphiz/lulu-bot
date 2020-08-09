@@ -10,7 +10,7 @@ Prefix: l.
 ## Current Commands:
 - Fetch: Returns how long the command took to respond.
 - Friend: Generate a random doggo image.
-- Paw: Picks one from a set of choices provided, delimited by "`|`"
+- Paw: Picks one from a set of choices provided, delimited by commas `,` and/or pipes `|`.
 
 ### Resources
 - A great tutorial on how to get started creating your own Discord bot: [How To Build a Discord Bot with Node.js](https://www.digitalocean.com/community/tutorials/how-to-build-a-discord-bot-with-node-js)
