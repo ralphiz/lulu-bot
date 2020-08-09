@@ -13,10 +13,12 @@ Prefix: l.
 - Paw: Picks one from a set of choices provided, delimited by commas `,` and/or pipes `|`.
 
 ### Resources
-- A great tutorial on how to get started creating your own Discord bot: [How To Build a Discord Bot with Node.js](https://www.digitalocean.com/community/tutorials/how-to-build-a-discord-bot-with-node-js)
+- A tutorial on how to get started creating your own Discord bot: [How To Build a Discord Bot with Node.js](https://www.digitalocean.com/community/tutorials/how-to-build-a-discord-bot-with-node-js)
 
-- Awesome tutorial on how to get started with the `discord.js-commando` module: [Discord.JS Commando Framework - Create and Organize Commands Like a Pro
+- A tutorial on how to get started with the `discord.js-commando` module: [YouTube tutorial
 ](https://www.youtube.com/watch?v=nDuDw4aH7Gg)
+
+- A guide on hosting a Discord bot: [Hosting a Discord bot](https://www.writebots.com/discord-bot-hosting/)
 
 - Dog APIs:
   - https://dog.ceo/dog-api/
