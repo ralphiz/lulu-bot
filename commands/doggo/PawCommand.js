@@ -6,14 +6,15 @@ module.exports = class PawCommand extends Command {
       name: "paw",
       group: "doggo",
       memberName: "paw",
-      description: "Chooses one of two choices.",
+      description:
+        "Chooses one from a collection of choices. Each choice must be separated by a `,` or `|`. Example: `l.paw treat, walk, nap`",
       argsType: "single",
     });
   }
 
   async run(message, args) {
-    const choices = args.split("|");
+    const choices = args.split(/,|\|/gm);
     const choice = choices[Math.floor(Math.random() * choices.length)];
-    message.say(`🐶: "My paw chooses ${choice}!"`);
+    message.say(`🐶: "My paw chooses: ${choice.trim()}!"`);
   }
 };
