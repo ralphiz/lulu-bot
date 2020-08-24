@@ -6,6 +6,10 @@ module.exports = class PawCommand extends Command {
       name: "paw",
       group: "doggo",
       memberName: "paw",
+      throttling: {
+        usages: 4,
+        duration: 20,
+      },
       description:
         "Chooses one from a collection of choices. Each choice must be separated by a `,` or `|`. Example: `l.paw treat, walk, nap`",
       argsType: "single",
