@@ -23,7 +23,7 @@ module.exports = class CatCommand extends Command {
     })
       .then((response) => response.json())
       .then((data) =>
-        msg.say(`"🐶 Here is a random neko:"`, {
+        msg.say(`"🐶 Here is a random neko friend:"`, {
           files: [data[0].url],
         })
       )
