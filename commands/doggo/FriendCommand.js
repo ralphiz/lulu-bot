@@ -4,6 +4,7 @@ const fetch = require("node-fetch");
 module.exports = class FriendCommand extends Command {
   constructor(client) {
     super(client, {
+      aliases: ["doggo"],
       name: "friend",
       group: "doggo",
       memberName: "friend",
