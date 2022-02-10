@@ -22,6 +22,7 @@ client.registry
   .registerGroups([
     ["doggo", "Doggo commands"],
     ["mod", "Mod commands"],
+    ["neko", "Neko commands"],
     ["other", "Other commands"],
   ])
   .registerDefaults()
