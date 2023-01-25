@@ -15,7 +15,7 @@ module.exports = class TreatCommand extends Command {
   }
 
   async run(msg) {
-    const treats = ["🍌", "🍎", "🥓", "🍉", "🍓", "🍐", "🥭"];
+    const treats = ["🍌", "🍎", "🥓", "🍉", "🍓", "🍐", "🥭", "🫐"];
     const treat = treats[Math.floor(Math.random() * treats.length)];
     msg.say(` 🐶: Thanks for the ${treat} ٩(◕‿◕｡)۶`);
   }
