@@ -24,6 +24,7 @@ client.registry
     ["mod", "Mod commands"],
     ["neko", "Neko commands"],
     ["other", "Other commands"],
+    ["workout", "Workout commands"],
   ])
   .registerDefaults()
   .registerCommandsIn(path.join(__dirname, "commands"));
