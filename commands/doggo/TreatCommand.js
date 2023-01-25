@@ -15,8 +15,31 @@ module.exports = class TreatCommand extends Command {
   }
 
   async run(msg) {
-    const treats = ["🍌", "🍎", "🥓", "🍉", "🍓", "🍐", "🥭", "🫐"];
+    const greetings = [
+      "Yo dawg. ",
+      "OMG. ",
+      "AYOOOOO! ",
+      "WOOF. ",
+      "D'aww. ",
+      "Hehehehe. ",
+    ];
+
+    const treats = [
+      "Banana 🍌",
+      "Apple 🍎",
+      "Bacon 🥓",
+      "Watermelon 🍉",
+      "Strawberry 🍓",
+      "Pear 🍐",
+      "Mango 🥭",
+      "Blueberry 🫐",
+    ];
+    const dogFaces = ["U ´ᴥ` U", "▼(´ᴥ`)▼", "▼・ᴥ・▼", "U・ᴥ・U", "໒( ̿❍ ᴥ ̿❍)ʋ"];
+
+    const greet = greetings[Math.floor(Math.random() * greetings.length)];
     const treat = treats[Math.floor(Math.random() * treats.length)];
-    msg.say(` 🐶: Thanks for the ${treat} ٩(◕‿◕｡)۶`);
+    const face = dogFaces[Math.floor(Math.random() * dogFaces.length)];
+
+    msg.say(` 🐶: "${greet} Thanks for the ${treat} ${face}"`);
   }
 };
