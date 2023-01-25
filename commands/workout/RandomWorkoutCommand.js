@@ -3,13 +3,14 @@ const { Command } = require("discord.js-commando");
 module.exports = class TreatCommand extends Command {
   constructor(client) {
     super(client, {
+      aliases: ["rw", "randomw", "randomworkout"],
       name: "random-workout",
       group: "workout",
       memberName: "workout",
       description: "Generate a random workout.",
       throttling: {
         usages: 1,
-        duration: 30,
+        duration: 60,
       },
     });
   }
@@ -42,8 +43,21 @@ module.exports = class TreatCommand extends Command {
       "1m elbow side plank hold (each side)",
     ];
 
+    const encouragement = [
+      "You got this!",
+      "You're doing great!",
+      "Keep it up!",
+      "Let's gooooooo!",
+      "AYOOOOOOO.",
+      "GET IT!!!!",
+    ];
+
     const workout = workouts[Math.floor(Math.random() * workouts.length)];
 
-    msg.say(`Your workout today is ${workout}`);
+    msg.say(
+      `🐶: "ᕙ(  •̀ ᗜ •́  )ᕗ Your random workout is: ${workout}. ${
+        encouragement[Math.floor(Math.random() * encouragement.length)]
+      }"`
+    );
   }
 };
