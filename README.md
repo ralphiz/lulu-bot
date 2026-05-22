@@ -1,4 +1,5 @@
-
+We love and miss you Lulu.
+January 28, 2014 - May 9, 2026 🤍
 
 <img src="https://raw.githubusercontent.com/ralphiz/lulu-bot/master/images/lulu.png" alt="Chipoodle Dog" width="250" height="250">
 
