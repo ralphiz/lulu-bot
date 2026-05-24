@@ -16,6 +16,10 @@ client.login(DISCORD_BOT_TOKEN);
 
 client.on("ready", () => {
   console.log("Lulu bot logged in!");
+  client.user.setPresence({
+    activity: { name: "In memory of Lulu 🤍", type: "PLAYING" },
+    status: "online",
+  });
 });
 
 client.registry
